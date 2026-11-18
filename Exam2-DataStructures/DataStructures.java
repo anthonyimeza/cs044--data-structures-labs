@@ -122,13 +122,31 @@ public class DataStructures {
     // 5. SORTING ALGORITHMS
     // ==========================================
     /**
-     * TODO: Implement Selection Sort to sort the array in ascending order.
+     * TODO: Implement Selection Sort to sort the array in ascending order. -> Finished
      * Hint: Find the minimum in the unsorted part and swap once per pass.
      */
     public static void selectionSort(int[] arr) {
         int n = arr.length;
-        // TODO: Write the outer and inner loops
-        // TODO: Implement the finding of the minimum and the swap
+        // TODO: Write the outer and inner loops -> Finished
+        //Moves boundary of the subarray by 1
+        for (int i = 0; i < n - 1; i++) {
+            int minIndex = i;
+
+            //Find min element in array
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            //Swap minimum element with first element
+            if (minIndex != i) {
+                int temp = arr[minIndex];
+                arr[minIndex] = arr[i];
+                arr[i] = temp;
+            }
+        }
+
+        // TODO: Implement the finding of the minimum and the swap -> Finished
     }
 
     // ==========================================
