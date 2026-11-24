@@ -2,7 +2,7 @@
 
 ## UML Class Design
 
-![img_1.png](img_1.png)
+[![img_1.png](img_1.png)](https://github.com/anthonyimeza/cs044--data-structures-labs/blob/main/Capstone_Project/ProjectUML.png?raw=true)
 
 ## Data Structure Selection
 
